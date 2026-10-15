@@ -5,6 +5,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+// Priority-based preemptive scheduler implementation.
+// This documentation-only change does not alter the algorithm or output.
 public class PriorityPreemptive extends CPUScheduler
 {
     @Override
@@ -14,6 +16,7 @@ public class PriorityPreemptive extends CPUScheduler
             if (((Row) o1).getArrivalTime() == ((Row) o2).getArrivalTime())
             {
                 return 0;
+                 
             }
             else if (((Row) o1).getArrivalTime() < ((Row) o2).getArrivalTime())
             {
